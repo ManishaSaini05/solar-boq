@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy:  #0d1b2a;
+  --navy2: #1b2f4a;
+  --amber: #f5a623;
+}
+
+body {
+  background: #f1f5f9;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Amber input style — matches beige cells from Excel */
+.input-amber {
+  background: #fff8e7;
+  border: 2px solid #f5c842;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #0d1b2a;
+  width: 100%;
+  outline: none;
+}
+.input-amber:focus { border-color: #f5a623; }
+
+.input-plain {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: monospace;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+}
+.input-plain:focus { border-color: #94a3b8; }
