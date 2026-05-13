@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import * as XLSX from "xlsx";
-import { supabase } from "@/lib/supabase";
-import { runDesignCalcs, getEffective } from "@/lib/calculations";
-import { STRUCTURES, BOQ_CATALOG, BOQ_SECTIONS } from "@/lib/boqData";
+import { supabase } from "../../../lib/supabase";
+import { runDesignCalcs, getEffective } from "../../../lib/calculations";
+import { STRUCTURES, BOQ_CATALOG, BOQ_SECTIONS } from "../../../lib/boqData";
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
